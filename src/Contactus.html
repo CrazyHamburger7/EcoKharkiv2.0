@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зв'язатися з нами</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./css/contactus.css">
+  <style>
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1 id="title" class="header1">Зв'язатися з нами</h1>
+    <nav>
+      <div id="nav_bar">
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox">
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li><a class="menu__item" href="../index.html" id="menu8">Головна</a></li>
+            <li><a class="menu__item" href="./Problems.html" id="menu1">Екологічні проблеми Харкова</a></li>
+            <li><a class="menu__item" href="./Trash.html" id="menu2">Стан та переробка відходів</a></li>
+            <li><a class="menu__item" href="./Freshair.html" id="menu3">Повітря та його якість</a></li>
+            <li><a class="menu__item" href="./news.html" id="menu4">Чистота водойм Харкова</a></li>
+            <li><a class="menu__item" href="./sing_up.html" id="menu5">Стан зелених зон</a></li>
+            <li><a class="menu__item" href="./Suggestions.html" id="menu6">Поради щодо збереження довкілля</a></li>
+            <li><a class="menu__item" href="./Eco help.html" id="menu7">Ековолонтерство</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <button class="lang-button" onclick="changeLanguage()" id="lang-btn">English</button>
+  </header>
+<main>
+  <div class="contact-container">
+    <h2 class="header2" id="contact-title">Напишіть нам</h2>
+    <form>
+      <div class="form-group">
+        <label for="name" id="label-name">Ваше ім'я</label>
+        <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="label-email">Електронна пошта</label>
+        <input type="email" id="email" name="email" placeholder="Введіть вашу електронну пошту" required>
+      </div>
+      <div class="form-group">
+        <label for="message" id="label-message">Повідомлення</label>
+        <textarea id="message" name="message" placeholder="Напишіть ваше повідомлення" required oninput="autoResize(this)"></textarea>        
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit-btn">Відправити</button>
+      </div>
+    </form>
+
+  </div>
+  <a href="#" class="scrollToTop" style="display: none;">
+    <img src="./images/Green arrow.png" alt="Scroll to top">
+  </a>  
+</main>
+
+<div class="m">
+  <div class="hills-container">
+    <img src="./images/hills.png" alt="Hills" class="hills-image hills1">
+    <img src="./images/hills2.png" alt="Hills 2" class="hills-image hills2">
+    <img src="./images/hills3.png" alt="Hills 3" class="hills-image hills3">
+  </div>
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
+      <a href="https://t.me/ecokharkiv" target="_blank" class="fab fa-telegram"></a>
+    </div>
+    <p>2025 Екологія Харкова | Сайт розроблено як проект Малої Академії Наук України</p>
+    <p>Сайт розробляв Бойко Андрій Сергійович</p>
+  </footer>
+</div>
+ 
+  <script src="./js/contactus.js"></script>
+</body>
+</html>

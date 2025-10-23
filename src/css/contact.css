@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #section-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2E3B4E;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .container.img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Georgia', serif;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .description a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .description a:hover {
+    text-decoration: underline;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e8f5e9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  
+  .scrollToTop img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #388e3c;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between; /* Adjusted for better alignment */
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .header h1 {
+    font-size: 24px; /* Slightly reduced for mobile */
+    margin-right: auto;
+  }
+  
+  /* Стилі для навігаційного меню */
+  /* Main navigation links */
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flex container for navigation items */
+    justify-content: center; /* Center align the nav links */
+  }
+  
+  .nav-links .dropdown {
+    position: relative;
+    display: inline-block; /* Keep dropdown inline */
+    margin-right: 20px;
+  }
+  
+  /* Style for the dropdown menu */
+  .nav-links .dropdown-content {
+    display: none; /* Initially hidden */
+    position: absolute;
+    background-color: #08420f;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;  /* Rounded corners */
+    list-style-type: none; /* Remove bullet points */
+    display: block; /* Ensures the items are displayed vertically */
+  }
+  
+  .nav-links .dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;  /* Rounded corners for dropdown items */
+  }
+  
+  .nav-links .dropdown-content a:hover {
+    background-color: #155014;
+    transform: scale(1.05); /* Slight scaling effect on hover */
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 5px; /* Rounded corners for links */
+  }
+  
+  .nav-links a:hover {
+    color: #80e27e;
+    background-color: rgba(128, 226, 126, 0.2);
+  }
+  
+  .nav-links li {
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  /* Display dropdown content when hovering */
+  .nav-links li:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Smooth visibility */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  
+  /* Style for the language button */
+  .lang-button {
+    background-color: #388e3c;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+    margin-left: 10px;
+    font-size: medium;
+  }
+  
+  .lang-button:hover {
+    color: #80e27e;
+  }
+  
+  
+  .main-content {
+    margin-top: 80px;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    animation: fadeIn 0.5s ease;
+    flex-grow: 1;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Kharkiv.jpg') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 36px; /* Adjusted for mobile */
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 16px; /* Adjusted for mobile */
+    margin-bottom: 40px;
+  }
+  
+  .sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .sections h2 {
+    margin-bottom: 30px;
+    color: #388e3c;
+    width: 100%;
+  }
+  
+  .sections ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .sections li {
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .sections li:hover {
+    transform: translateY(-5px);
+  }
+  
+  .sections li h3 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sections li h3 i {
+    margin-right: 10px;
+    color: #2e5c41;
+  }
+  
+  .footer {
+    background-color: #388e3c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    position: relative;
+    font-size: 14px;
+  }
+  
+  .footer p {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 600px) {
+    .header h1 {
+      font-size: 20px; /* Adjust title size */
+    }
+  
+    .hero h1 {
+      font-size: 28px; /* Adjust hero title */
+    }
+  
+    .hero p {
+      font-size: 14px;
+    }
+  
+    .sections li {
+      width: 100%; /* Stack sections vertically */
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .nav-links a {
+      font-size: 12px; /* Smaller nav links */
+      margin-left: 10px;
+    }
+  
+    .lang-button {
+      font-size: 12px; /* Smaller language button */
+      padding: 6px 14px;
+    }
+  }
+  
+      .main-content {
+        margin-top: 80px;
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        margin: 30px;
+        animation: fadeIn 0.5s ease;
+        flex-grow: 1;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Kharkiv.jpg') center/cover no-repeat;
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      .hero p {
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+      .sections {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .sections h2 {
+        margin-bottom: 30px;
+        color: #388e3c;
+        width: 100%;
+      }
+      .sections ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .sections li {
+        width: calc(33% - 20px);
+        margin-bottom: 20px;
+        text-align: left;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      .sections li:hover {
+        transform: translateY(-5px);
+      }
+      .sections li h3 {
+        display: flex;
+        align-items: center;
+      }
+      .sections li h3 i {
+        margin-right: 10px;
+        color: #2e5c41;
+      }
+      .footer {
+        background-color: #388e3c;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        position: relative;
+        font-size: 14px;
+      }
+      .footer p {
+        font-size: 16px;
+      }
+      @media (max-width: 600px) {
+        .header h1 {
+          font-size: 22px;
+        }
+        .hero h1 {
+          font-size: 32px;
+        }
+        .hero p {
+          font-size: 14px;
+        }
+        .sections li {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+        .nav-links a {
+          font-size: 14px;
+          margin-left: 15px;
+        }
+        /* Стилі для контейнера */
+  .container {
+    width: 100%;
+    text-align: center; /* Центрує текст по горизонталі */
+    margin: 0 auto; /* Центрує контейнер по горизонталі */
+    padding-top: 20px; /* Відступ зверху для кращого вигляду */
+  }
+  
+  /* Стилі для картинки */
+  .container img {
+    display: block;
+    margin: 0 auto; /* Центрує картинку по горизонталі */
+    max-width: 100%; /* Обмежує ширину картинки */
+    height: auto; /* Зберігає пропорції картинки */
+  }
+  .container-content{
+    justify-content: center;
+    margin-left: 100px;
+  }
+  
+  /* Стилі для заголовку */
+  .container h1 {
+    font-size: 2em; /* Можна налаштувати розмір шрифта */
+    font-weight: bold; /* Робить текст жирним */
+    margin-top: 20px; /* Відступ між картинкою і заголовком */
+  }
+  
+  
+      }
+      .video-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #388e3c;
+        color: white;
+        padding: 12px 20px;
+        margin: 10px 5px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 16px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+      .video-container {
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+        width: 96%;
+      }
+      .video-container iframe {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      .video-link:hover {
+        background-color: #80e27e;
+        color: #333;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+      .video-link i {
+        margin-right: 8px;
+        font-size: 18px;
+      }
+      @media (max-width: 768px) {
+        .header {
+          padding: 10px 20px;
+        }
+        .header h1 {
+          font-size: 22px;
+          margin-right: 0;
+        }
+        .nav-links a {
+          margin-left: 15px;
+          font-size: 14px;
+        }
+        .content-container {
+          flex-direction: column;
+          text-align: center;
+        }
+        .content-container img {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+        .content-text {
+          width: 80%;
+        }
+        .video-link {
+          font-size: 14px;
+          padding: 10px 15px;
+        }
+      }
+      @media (max-width: 600px) {
+        .header h1 {
+          font-size: 20px;
+        }
+        main h2 {
+          font-size: 26px;
+        }
+        .nav-links a {
+          font-size: 14px;
+          margin-left: 10px;
+        }
+        .content-container {
+          padding: 15px;
+        }
+        .content-container img {
+          width: 90%;
+          margin-bottom: 20px;
+        }
+        .content-text {
+          width: 90%;
+          font-size: 16px;
+        }
+        .footer p {
+          font-size: 14px;
+        }
+  
+  
+  
+      }
