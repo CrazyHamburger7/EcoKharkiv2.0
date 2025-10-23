@@ -27,13 +27,13 @@ const Air = () => {
           <div className="content-wrapper">
             <div className="content-images-grid">
               <div className="content-image-item">
-                <img src="/src/images/Air Pollution.jpg" alt="Air Pollution" />
+                <img src="/src/images/Air-Pollution.jpg" alt="Air Pollution" />
               </div>
               <div className="content-image-item">
-                <img src="/src/images/Air Pollution1.jpg" alt="Air Pollution" />
+                <img src="/src/images/Air-Pollution1.jpg" alt="Air Pollution" />
               </div>
               <div className="content-image-item">
-                <img src="/src/images/Air Pollution2.jpg" alt="Air Pollution" />
+                <img src="/src/images/Air-Pollution2.jpg" alt="Air Pollution" />
               </div>
             </div>
             <div className="content-text">

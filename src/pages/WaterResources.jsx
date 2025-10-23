@@ -9,21 +9,21 @@ const WaterResources = () => {
     {
       title: t.water.resourcesTitle,
       content: t.water.resourcesContent,
-      image: '/src/images/Water Pollution.jpg'
+      image: '/src/images/Water-Pollution.jpg'
     },
     {
       title: t.water.warTitle,
       content: t.water.warContent,
-      image: '/src/images/Water Pollution.png'
+      image: '/src/images/Water-Pollution.png'
     },
     {
       title: t.water.pollutionTitle,
       content: t.water.pollutionContent,
       images: [
-        '/src/images/Water Pollution3.png',
-        '/src/images/Water Pollution5.png',
-        '/src/images/Water Pollution6.png',
-        '/src/images/Water Pollution7.png'
+        '/src/images/Water-Pollution3.png',
+        '/src/images/Water-Pollution5.png',
+        '/src/images/Water-Pollution6.png',
+        '/src/images/Water-Pollution7.png'
       ]
     }
   ]
